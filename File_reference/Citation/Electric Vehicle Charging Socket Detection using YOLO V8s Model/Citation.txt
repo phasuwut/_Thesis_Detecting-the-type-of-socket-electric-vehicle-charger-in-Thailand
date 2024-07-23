@@ -1,0 +1,2 @@
+Citation : Tadic, V., Odry, A., Vizvari, Z., Kiraly, Z., Felde, I., & Odry, P. (2024). Electric Vehicle Charging Socket Detection using YOLOv8s Model. Acta Polytechnica Hungarica, 21(10).
+Doi : http://dx.doi.org/10.12700/APH.21.10.2024.10.8
