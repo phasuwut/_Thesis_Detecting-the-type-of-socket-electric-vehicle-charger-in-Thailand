@@ -1,0 +1,17 @@
+List Youtube Demo detection
+
+YOLO V5s (GPU): https://www.youtube.com/playlist?list=PLNxvtda7jU6ym0jm9BiE41GJBgcs0a5El
+YOLO V6s (GPU): https://www.youtube.com/playlist?list=PLNxvtda7jU6xpE9gF8OBPPrYB7miwOqKA
+YOLO V7 (GPU): https://www.youtube.com/playlist?list=PLNxvtda7jU6w14b8okOcdZEF9z544duia
+YOLO V8s (GPU): https://www.youtube.com/playlist?list=PLNxvtda7jU6wMP0gxSPc1BBNzBgcpaAla
+
+YOLO V5s (CPU): https://www.youtube.com/playlist?list=PLNxvtda7jU6x0K3LNigdMk8GReSiv_baI
+YOLO V6s (CPU): https://www.youtube.com/playlist?list=PLNxvtda7jU6yF2Cdek6o_pd-wVYtpiOBY
+YOLO V8s (CPU): https://www.youtube.com/playlist?list=PLNxvtda7jU6yHkl-S79GTCPKMqIlaKfFS
+
+YOLO V5s (MPS): https://www.youtube.com/playlist?list=PLNxvtda7jU6xMr4uvJ3cPHMPcg9inAg3O
+YOLO V6s (MPS):https://www.youtube.com/playlist?list=PLNxvtda7jU6xHkHFYVBupWUw-O7JfC-ss
+YOLO V8s (MPS): https://www.youtube.com/playlist?list=PLNxvtda7jU6wYMh90TizAtzBpzzHxans3
+
+ALL : https://www.youtube.com/playlist?list=PLNxvtda7jU6xCzOJYoI6w1x-tk7pbHeAA
+
