@@ -1,0 +1,104 @@
+@use "sass:math";
+@use "sass:list";
+
+$mobile-viewport: 375;
+$desktop-viewport: 1366;
+
+/* 
++-----------------------------------------+
+|            Font Size Chart              |
++-----------------------------------------+
++---------------------+---------+---------+
+|      Font Sizes     | Mobile  | Desktop |
++---------------------+---------+---------+
+|  text-display       |  55px   |   120px  |
++---------------------+---------+---------+
+|  text-headline-1    |  30px   |   60px  |
++---------------------+---------+---------+
+|  text-headline-2    |  24px   |   40px  |
++---------------------+---------+---------+
+|  text-headline-3    |  20px   |   36px  |
++---------------------+---------+---------+
+|  text-paragraph-1   |  18px   |   24px  |
++---------------------+---------+---------+
+|  text-paragraph-2   |  18px   |   22px  |
++---------------------+---------+---------+
+|  text-paragraph-3   |  18px   |   20px  |
++---------------------+---------+---------+
+|  text-paragraph-4   |  18px   |   18px  |
++---------------------+---------+---------+
+|  text-remark        |  12px   |   16px  |
++---------------------+---------+---------+
+|  text-propup        |  30px   |   40px  |
++---------------------+---------+---------+
+ */
+
+$fontSizes: (
+  "text-display": (
+    55px,
+    120px,
+  ),
+  "text-headline-1": (
+    30px,
+    60px,
+  ),
+  "text-headline-2": (
+    24px,
+    34px,
+  ),
+  "text-headline-3": (
+    20px,
+    36px,
+  ),
+  "text-paragraph-1": (
+    18px,
+    24px,
+  ),
+  "text-paragraph-2": (
+    18px,
+    22px,
+  ),
+  "text-paragraph-3": (
+    18px,
+    20px,
+  ),
+  "text-paragraph-4": (
+    18px,
+    18px,
+  ),
+  "text-remark": (
+    12px,
+    16px,
+  ),
+  "text-propup": (
+    30px,
+    40px,
+  ),
+);
+
+@each $name, $sizes in $fontSizes {
+  .#{$name} {
+    $mb: list.nth($sizes, 1);
+
+    $dt: list.nth($sizes, 2);
+
+    font-size: $mb; /* as fallback */
+    font-size: font-rem($mb);
+    // color: blue;
+
+    &.text-fluid {
+      font-size: font-vw($mb, $mobile-viewport);
+    }
+
+    // tailwind (1024px as desktop)
+    @screen lg {
+      font-size: $dt; /* as fallback */
+      font-size: font-rem($dt);
+      // color: red;
+
+      &.text-fluid {
+        font-size: font-vw($dt, $desktop-viewport);
+      }
+    }
+  }
+}
